@@ -1,10 +1,12 @@
 {
     "name": "Backend",
-    "dockerComposeFile": "docker-compose.yaml",
+    "dockerComposeFile": "../docker-compose.yaml",
     "workspaceFolder": "/var/www/html",
     "service": "server",
     "forwardPorts": [
-        8080
+        8080,
+        80,
+        9000
     ],
     "shutdownAction": "stopCompose"
 }
